@@ -1,23 +1,22 @@
-**Hi class, welcome to the AOS C111/204 final project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+### Final Project: Global Video Game Sales Analytics with Machine Learning
 
-For this project, you will be applying your skills to train a machine learning model using real-world data, then publishing a report on your own website.
+Yifan Sun
+Department of Earth, Planetary, and Space Sciences, UCLA
+AOS C204: Introduction to Machine Learning for Physical Sciences
+Instructor: Dr. Alexander Lozinski
+Dec. 6 2024
 
-* To get data for your project, you could:
-  * use **your own data** from a separate research activity
-  * **scour the internet** to find something original, then preprocess it yourself - see the Module Overview on BruinLearn for some resources
-  * browse an archive of data designed for machine learning problems, such as the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/datasets)
+## Introduction
 
-* Your report should be written in a scientific language and style. [This template page](/project.md) gives an example structure that you could use, but feel free to make it your own. See Bruinlearn for some examples from previous students.
+In an increasingly competitive and dynamic video game market, effective advertising strategies hinge on a clear understanding of the factors that drive global sales. Given a [dataset from Kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales/data) containing video game sales and related information, we would like to understand the game selling situation around the world and influencing factors and to develop a suitable advertising strategy according to the situation. In this project, we will try to solve the following questions:
+* In which region will the game sell the most? (The most meaningful problem which we are going to focus on)
+  With the popularisation of the internet, people around the world may have access to video games (Yufa et. al [1]). However, diverse cultural backgrounds, local economic conditions, levels of technological development, etc, could greatly affect the sales of different kinds of video games. With the information on the best sales region, we will be able to decide on suitable advertising volume for regions and know our advertising key areas.
+* On which platform will the game be sold?
+  Starting from the beginning of this century, hardware manufacturers, such as Microsoft, Sony, and Nintendo, have carefully developed a platform-based market where software sales subsidize relatively inexpensive hardware (Babb et. al [2]). In this highly competitive market, different platforms may face various groups of users, have complicated marketing strategies, and employ different maintenance groups. As a result, platforms may influence the sales of a particular game. We need to know the selling platforms, in order to design ads in line with platform sales strategies and user preferences.
 
-Your website will be a great addition to your CV, and a place to host future projects too since it doubles as a GitHub repository. The first step is to set up a project website like this one by following the instructions below. 
+In this project, we will use different machine learning models and algorithms, including Neural Network, Decision Tree, etc, to study and solve them. We are going to present our results and analyze them in order to get a better understanding of the dataset and seek for deeper insights.
 
-## How does this website work?
-
-First, check out the Github repository for this site: [https://github.com/atmosalex/atmosalex.github.io/](https://github.com/atmosalex/atmosalex.github.io/).
-
-Using GitHub pages, you can write a website using markdown syntax - the same syntax we use to write comments in Google Colab notebooks. GitHub pages then takes the markdown file and renders it as a web page using a Jekyll theme. The markdown source code for this page [is shown here](https://github.com/atmosalex/atmosalex.github.io/blob/main/README.md?plain=1).
-
-## Setting up your Project Website
+## Data
 
 ### How to copy this site as a template
 1. Create [a GitHub account](https://github.com/)
