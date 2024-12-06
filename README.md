@@ -41,7 +41,7 @@ In this analysis, random forest classification proves to be a more effective and
 
 [^1]: [Yufa, A., Yu, J. L., Chan, H. & Berger, P. D. (2019) Predicting global video-game sales. Quest Journals. https://www.questjournals.org/jrbm/papers/vol7-issue3/I07036064.pdf] (https://www.questjournals.org/jrbm/papers/vol7-issue3/I07036064.pdf)
 [^2]: [Babb, J., Terry, N. & Dana, K. (2013) The impact of platform on Global Video Game Sales. International
-Business & Economics Research Journal (IBER), 12(10), 1273. https://doi.org/10.19030/iber.v12i10.8136] (https://doi.org/10.19030/iber.v12i10.8136)
+Business & Economics Research Journal (IBER), 12(10), 1273. https://doi.org/10.19030/iber.v12i10.8136] (https://www.researchgate.net/publication/297754899_The_Impact_Of_Platform_On_Global_Video_Game_Sales)
 [^3]: [vgchartz.com] (http://www.vgchartz.com/)
 [^4]: [Roßbach. (2018). Neural Networks vs. Random Forests – Does it always have to be Deep Learning? https://blog.frankfurt-school.de/wp-content/uploads/2018/10/Neural-Networks-vs-Random-Forests.pdf] (https://blog.frankfurt-school.de/wp-content/uploads/2018/10/Neural-Networks-vs-Random-Forests.pdf)
 
