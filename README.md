@@ -16,7 +16,7 @@ In an increasingly competitive and dynamic video game market, effective advertis
 * In which region will the game sell the most?
   With the popularisation of the internet, people around the world may have access to video games (Yufa et. al [^1]). However, diverse cultural backgrounds, local economic conditions, levels of technological development, etc, could greatly affect the sales of different kinds of video games. With the information on the best sales region, we will be able to decide on suitable advertising volume for regions and know our advertising key areas.
 
-In this project, we will use different machine learning models and algorithms, including Neural Network, Decision Tree, etc, to study and solve them. We are going to present our results and analyze them in order to get a better understanding of the dataset and seek for deeper insights. Here is the [Google Colab notebook] () that includes my code.
+In this project, we will use different machine learning models and algorithms, including Neural Network, Decision Tree, etc, to study and solve them. We are going to present our results and analyze them in order to get a better understanding of the dataset and seek for deeper insights. Here is the [Google Colab notebook](https://colab.research.google.com/drive/17OJZtdTBYMnB2QnK2BwHHPif1NarYJL9?usp=sharing) that includes my code.
 
 ## Data
 
@@ -36,7 +36,7 @@ The fields in the dataset include:
 
 To address our research question—“In which region will the game sell the most?”, we transformed the sales data into proportions and visualized the distribution of sales across regions using histograms:
 
-![Figure 2: Proportion of sales in different regions](assets/Figure2.png)
+<img src="/assets/Figure2.png" width="600" />
 *Figure 2: Proportion of sales in different regions*
 
 From this visualization, we observed significant differences in game sales across regions. Additionally, when selecting random subsets of games, we noticed that the main sales region varied across games. These findings confirm that our dataset is well-suited to the problem of predicting the region with the highest sales for each game.
@@ -102,7 +102,11 @@ After fitting the random search, we got the best hyperparameters:
 
 After about 18 epochs, the accuracy and loss remain unchanged for the training and validation data. The accuracy for the training and validation dataset reached about 60% and the loss decreased to nearly 0.
 
-|![Figure 3-1](assets/Figure3-1.png)|![Figure 3-2](assets/Figure3-2.png) |
+
+<p float="middle">
+  <img src="/assets/Figure3-1.png" width="400" />
+  <img src="/assets/Figure3-2.png" width="410" /> 
+</p>
 *Figure 3: Accuracy and Loss (RMSprop)*
 
 When we use the test dataset to test on the performance, we get a loss of 0.6594 and accuracy 60.78%.
@@ -111,8 +115,11 @@ When we use the test dataset to test on the performance, we get a loss of 0.6594
 
 For the other neural networks trained with Adam Optimizer, it reaches an accuracy of 61% after 2 epochs for training data and stays unchanged. The accuracy for validation data is about 60% and the loss for validation data is about 0. They stay unchanged for all epochs.
 
-|![Figure 4-1](assets/Figure4-1.png)|![Figure 4-2](assets/Figure4-2.png) |
-*Figure 3: Accuracy and Loss (Adam)*
+<p float="middle">
+  <img src="/assets/Figure4-1.png" width="400" />
+  <img src="/assets/Figure4-2.png" width="435" /> 
+</p>
+*Figure 4: Accuracy and Loss (Adam)*
 
 When we use test data to test the accuracy, we get a loss of 0.7163 and an accuracy of 61.49%.
 
@@ -121,13 +128,15 @@ When we use test data to test the accuracy, we get a loss of 0.7163 and an accur
 * without optimization
 For the random forest model, we have an accuracy of 73.5542% and confusion matrix before we applied the optimization step:
 
-![Figure 5: Confusion Matrix and Accuracy (no opt)](assets/Figure5.png)
+<img src="/assets/Figure5.png" width="400" />
+*Figure 5: Confusion Matrix and Accuracy (without optimization)*
 
 * with optimization
 
 Then, we use these learned best hyperparameters to train the training dataset and compare the final result with our original RandomForestClassifier with `n_estimators` set to 1000:
 
-![Figure 6: Confusion Matrix and Accuracy (opt)](assets/Figure6.png)
+<img src="/assets/Figure6.png" width="400" />
+*Figure 6: Confusion Matrix and Accuracy (optimization)*
 
 As shown above, after using hyperparameter tuning, we enhanced our accuracy from 73.5542% to 74.1566%.
 
