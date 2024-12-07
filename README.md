@@ -65,6 +65,7 @@ Below are the Random Forest Hyperparameters we’ll be looking at:
 * max_depth: maximum number of levels in the tree
 * min_samples_split: minimum number of samples required to split a node
 * min_samples_leaf: minimum number of samples required at each leaf node
+
 After fitting the random search, we got the best hyperparameters:
 * `n_estimators = 1800`,
 * `min_samples_split = 10`,
